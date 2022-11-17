@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  idrac-fan-control:
+    build: .
+    image: diamondsw/idrac-fan-control
+    container_name: idrac-fan-control
+    restart: unless-stopped
+    environment:
+      - IDRAC_HOST=
+      - IDRAC_USER=
+      - IDRAC_PW=
+      - MAXTEMP=40
+      - FANSPEED=20
