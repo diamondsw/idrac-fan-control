@@ -2,8 +2,7 @@ version: '3'
 
 services:
   idrac-fan-control:
-    build: .
-    image: diamondsw/idrac-fan-control
+    image: diamondsw/idrac-fan-control:latest
     container_name: idrac-fan-control
     restart: unless-stopped
     environment:
